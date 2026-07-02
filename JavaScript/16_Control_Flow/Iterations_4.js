@@ -20,3 +20,50 @@ console.log(learn)
 
 const learn1 = nums.reduce((acc,curr)=> acc+curr,8)
 console.log(learn1)
+
+// reduce can also be used in array of objects
+
+const books = [
+    
+    
+  {
+    title: 'Book One',
+    genre: 'Fiction',
+    sold: 200
+  },
+  {
+    title: 'Book Two',
+    genre: 'Non-Fiction',
+    sold: 300
+  },
+  {
+    title: 'Book Three',
+    genre: 'History',
+    sold: 400
+  },
+  {
+    title: 'Book Four',
+    genre: 'Non-Fiction',
+    sold: 500
+  },
+  {
+    title: 'Book Five',
+    genre: 'Science',
+    sold: 600
+  },
+  {
+    title: 'Book Six',
+    genre: 'Fiction',
+    sold: 700
+  },
+  {
+    title: 'Book Seven',
+    genre: 'History',
+    sold: 800
+  }
+
+    
+]
+
+const total_sold = books.reduce((acc,item)=>acc+item.sold,0)
+console.log(total_sold)
