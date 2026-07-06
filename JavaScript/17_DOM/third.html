@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    
+</head>
+<body>
+
+</body>
+
+<script>
+
+    // addding elements using DOM
+   const div=document.createElement('div') // this creates "div" element
+   div.className="main"
+   div.id=12
+   div.setAttribute("title", "generated title")
+   div.style.backgroundColor="blue"
+   const text = div.innerText="Hello Everyone"
+   div.style.color='red'
+   
+// whatever we added till now is in the memory so it won't appear in the HTML webpage
+
+document.body.appendChild(div)
+
+</script>
+</html>

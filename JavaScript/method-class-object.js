@@ -18,7 +18,6 @@ this.name and this.age means when initialising user 1, so there it means:
 user1.name = Satyam and user1.age = 23
 
 Here, User is class
-
 everything inside {} is object which has key and values
 greet() is a method i.e function inside class
 

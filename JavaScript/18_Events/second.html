@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  </head>
+  <body>
+    
+    <h1 id ="h1">Satyam DevOps Engineer</h1>
+    <button id="button">Stop</button>
+    
+    <script>
+        const changer = function(){
+        document.querySelector('#h1').innerHTML = '<h1>Satyam Clouds Engineer</h1>'
+    }
+     
+
+     
+    const timer = setTimeout(changer, 5000) // settimeout runs the function after 5s
+    
+    // we also have setInterval, which runs the function after every interval and we stop by clearInterval
+
+
+    
+    
+    // we can stop the change by clicking stop button
+    // to stop we'll stop the setTimeout on clicking button by using clearTimeout()
+
+    document.querySelector('#button').addEventListener('click', function(){
+        clearTimeout(timer)
+        console.log("Stopped") } )
+  
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    
+</head>
+<body>
+    <div class="parent">
+        <div class ="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>        
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent.children) // this returns HTML collection because it has many children 
+
+    
+
+    for(i=0;i<parent.children.length;i++){
+        console.log(parent.children[i].innerHTML) 
+    }
+
+    const child = parent.children[3]
+    console.log(child)
+
+    // we can go back to parent as well from child
+    console.log(child.parentElement)
+
+
+
+</script>
+</html>
