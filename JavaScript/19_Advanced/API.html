@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest Example</title>
+</head>
+<body>
+
+<script>
+    // GitHub API endpoint
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+
+    // Step 1: Create an XMLHttpRequest object
+    const xhr = new XMLHttpRequest();
+
+    // Step 2: Prepare the request
+    // GET = Retrieve data
+    xhr.open("GET", requestUrl);
+
+    // Step 3: Register a callback
+    // This function runs whenever readyState changes
+    xhr.onreadystatechange = function () {  //it is a callback and Javascript stores this callback
+    // A callback is simply a function that is passed as an argument to another function, so that it can be executed later
+        console.log("Current State:", xhr.readyState);
+
+        // Step 4: Check if the request has completed
+        if (xhr.readyState === 4) {
+
+            // Response received from the server
+            console.log(this.responseText); // this means xhr object
+
+            // Convert JSON string into a JavaScript object
+            const data = JSON.parse(this.responseText); // we get response in JSON string format, so we are converting into Javascript object so that we can use JS object properties like data.follower
+            console.log(data);
+
+            console.log("Name:", data.name);
+            console.log("Followers:", data.followers);
+            console.log("Public Repositories:", data.public_repos);
+            console.log("Avatar URL:", data.avatar_url);
+        }
+    };
+
+    // Step 5: Send the request
+    xhr.send();
+
+   // after this send request, all lines of code are executed but browser is still running.
+   // Browser is waiting for responses like mouse click, keyboard press, timers and network responses
+   // if browser receivers response from Github after 200ms, the browser says that XHR object's readyState changed and updates the readyState value
+   // now xhr object has readychangeState, so it puts the callback into Javascript to execute
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
