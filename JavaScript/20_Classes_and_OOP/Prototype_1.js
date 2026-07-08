@@ -29,7 +29,8 @@ function username(name, age){
 
 }
 
-username.prototype.greet = function(){ // greet is a method that is stopped inside prototype object
+username.prototype.greet = function(){  // here we have introduced a new prototype greet in username which has function() property
+                                     // greet is a method that is stopped inside prototype object
     console.log(this.name)  //username.prototype is the prototype object
 }
 username.prototype.agefuture = function(){
