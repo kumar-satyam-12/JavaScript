@@ -29,7 +29,8 @@
         if (xhr.readyState === 4) {
 
             // Response received from the server
-            console.log(this.responseText); // this means xhr object
+            console.log(this.responseText); //responseText is the property of XMLHttpRequest
+             // this means xhr object
 
             // Convert JSON string into a JavaScript object
             const data = JSON.parse(this.responseText); // we get response in JSON string format, so we are converting into Javascript object so that we can use JS object properties like data.follower

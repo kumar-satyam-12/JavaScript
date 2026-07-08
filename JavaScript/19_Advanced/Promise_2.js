@@ -24,6 +24,7 @@ Now the second .then waits for the promise and once the promise is resolved succ
 
 
 And if anything like response.json or fetch() fails the catch runs, and what message has to be displayed is decided by the browser
+Because here we aren't generating the Promise, its the browser which is generating 
 
 
 
