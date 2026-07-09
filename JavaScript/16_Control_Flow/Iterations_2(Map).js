@@ -16,6 +16,13 @@ for (const key in user) {
 
 //JS also has a concept of Maps, it is like objects
 
+/* Here:
+
+set(key, value) → Adds or updates an entry.
+get(key) → Retrieves the value.
+has(key) → Checks if a key exists.
+delete(key) → Removes an entry. */
+
 const fun = new Map();
 fun.set("name", "Satyam")
 

@@ -19,8 +19,8 @@ user2.name = "Rahul";
 console.log(user1.name); // Rahul
 console.log(user2.name); // Rahul
 
-but here  both variables(user1 and user2) are initially pointing to the same object (Satyam)
-after changing user2.name it will change the object from Satyam to Rahul
+but here  both variables(user1 and user2) are initially pointing to the same object property value (Satyam)
+after changing user2.name it will change the property value from Satyam to Rahul
 so console.log(user1) and console.log(user2) will give o/p as Rahul 
 
 

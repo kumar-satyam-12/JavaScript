@@ -5,8 +5,7 @@ const course = {
 }
 
 const { name, fees} = course
-console.log(name)
-
+console.log(name) // means const name = course.name and const fees = course.fees
 // we have destructured the objects and created the variables with the same name as object's key, we can even change the variable's name
 
 const {name: n, fees: f} = course

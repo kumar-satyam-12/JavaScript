@@ -15,3 +15,8 @@ class user {
 
 const test = new user("Satyam", 123, "xyz@123")
 console.log(test.encryptPassword())
+
+/* A class is a blueprint (template) used to create multiple objects with the same structure and behavior.
+
+Instead of creating many similar objects manually, you define a class once and create as many objects as you need
+ */

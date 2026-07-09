@@ -7,7 +7,7 @@ const location = {
     __proto__: user  // we have given location the prototype of user, so it now has inherited the user's name property
 }
 
-console.log(user.name)// we get the output of inherited property name
+console.log(location.name)// we get the output of inherited property name
 
 //one more way to do is
 const display={

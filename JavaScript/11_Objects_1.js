@@ -29,6 +29,6 @@ console.log(trial.age)
 
 
 
-console.log(trial) // it shows all the object of "obj" variable
+console.log(trial) // it shows all the properties of "obj" variable
 
 

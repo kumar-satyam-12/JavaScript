@@ -1,6 +1,7 @@
 # OOP
 
 ## Parts of OOP
+Object Literal
 
 constructor function
 prototype

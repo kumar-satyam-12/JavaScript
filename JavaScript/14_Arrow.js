@@ -13,6 +13,7 @@ obj.greet()
 
 function hello(){  
     let  hi = "Hello"                //rule of thumb: in function always use let or const. Because we only want local scope in functions
+    console.log(hi)
     console.log(this.hi)
 }
 hello()  // this.hi won't work for functions

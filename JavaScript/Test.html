@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    
+</head>
+<body>
+<ul class="languages">
+    <li>JavaScript</li>
+</ul>
+
+</body>
+
+<script>
+    function adder(artifact){
+        const li = document.createElement('li')
+        li.innerText= `${artifact}` 
+        document.querySelector('.languages').appendChild(li)
+
+    }
+    adder("python")
+</script>

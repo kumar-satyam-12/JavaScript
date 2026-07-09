@@ -17,7 +17,7 @@
             //requirement
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))
+                .addEventListener('click', this.handleClick.bind(this)) // bind() is used to prevent this from changing when a function is called later
 
         }
         handleClick(){

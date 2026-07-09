@@ -42,6 +42,8 @@
 
      // here owl id comes under images id so if we click on owl first "owl clicked" will be trigerred and then "clicked inside ul"
      // this is called bubbling phase because we are moving bottom to top i.e children to parent (when event propagation is false)
+    // if we click on image first then only the "clicked inside ul" will be triggered because event started on parent not on child
+    // false value is by default, even if we don't write its considered false but we need to write for true
 
      document.getElementById('images').addEventListener('click', function(e){
          console.log("clicked inside the ul");

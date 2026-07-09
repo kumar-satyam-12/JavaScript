@@ -34,7 +34,7 @@ greet(); // this is giving the output as Rahul, even though function was made ri
 
 (function chai (){  // this is named IIFE
     console.log("CHAI")
-}) ();
+}) (); // it runs because of --> ();
 
 //  IIFE is used to execute a function immediately and prevent variables inside it from polluting the global scope.
 

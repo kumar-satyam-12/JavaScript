@@ -15,7 +15,7 @@ const Promiseone = new Promise(function(resolve, reject){ //resolve means promis
 })
 
 Promiseone
-.then((user)=>{      // in first .then we are called when the promise if fulfilled (resolved), it will carry the value inscribed in resolve
+.then((user)=>{      // in first .then we  called when the promise if fulfilled (resolved), it will carry the value inscribed in resolve
     return user.username     // we can't directly get the value from assigning this return to a variable, so we'll use chaining method of then, one more then  
 })
  // here instead of then chaining we could have also directly used console.log(user.username) in the first .then just like in catch and still get the answer, we used this method to understand that we can use .then like chaining too
